@@ -1,6 +1,6 @@
 body {
     margin: 20px;
-    font-family: verdana, hermes maia, concourse, "alright sans";
+    font-family: "trebuchet ms", "segoe ui", corbel;
 }
 
 .profile-photo {
@@ -14,9 +14,11 @@ body {
     width: 400px;
     margin: 0 auto;
     text-align: center;    
-    color: #2b2839;
-    border-bottom: 5px solid purple;
-    background: #ddebf8;
+    color: #8E9AAF;
+    border-bottom: 5px solid #CBC0D3;
+    border-left: 5px solid #CBC0D3; 
+    background: #EFD3D7;
+    border-radius: 7px;
 }
 
 .dotted-border {
