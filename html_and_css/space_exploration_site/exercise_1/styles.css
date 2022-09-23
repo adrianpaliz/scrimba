@@ -1,6 +1,6 @@
 body {
     background-image: url("images/galaxy.webp");
-    color: white;
+    color: #82a5ca;
     background-size: cover;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
@@ -11,6 +11,8 @@ body {
     padding: 6px 12px;
     background: white;
     font-family: 'Orbitron', sans-serif;
+    color: #82a5ca;
+    font-weight: bold;
 }
 
 .underline {
