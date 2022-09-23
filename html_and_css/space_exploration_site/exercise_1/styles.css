@@ -2,4 +2,14 @@ body {
     background-image: url("images/universe.jpg");
     color: white;
     background-size: cover;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
 }
+
+.button {
+    border: none;
+    padding: 6px 12px;
+    background: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
