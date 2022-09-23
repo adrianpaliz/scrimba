@@ -1,8 +1,8 @@
 @font-face {
-    src: url("Corleone.ttf");
-    font-family: Corleone;
+    src: url("fonts/courier.ttf");
+    font-family: courier;
 }
 
-h1 {
-    font-family: corleone;    
+body {
+    font-family: courier;    
 }
