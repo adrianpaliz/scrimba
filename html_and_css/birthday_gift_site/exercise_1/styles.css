@@ -1,0 +1,9 @@
+body {
+	font-family: 'Happy Monkey', cursive;
+	text-align: center;
+}
+
+#profile-photo {
+	border-radius: 50%;
+	width: 150px;
+}
