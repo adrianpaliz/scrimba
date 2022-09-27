@@ -15,8 +15,18 @@ h1, h2, h3, h4, p {
 	text-shadow: 0px 0px 1px black;
 }
 
-h2, h4 {
+#birthday-age {
 	background: #EFB0C9;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 5px 0 10px 0;
+}
+
+#birthday-date {
+	background: #EFB0C9;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 0;
 }
 
 #header {
