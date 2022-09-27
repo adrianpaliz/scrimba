@@ -2,7 +2,10 @@ body {
 	font-family: 'Happy Monkey', cursive;
 	text-align: center;
 	color: #ffffff;
-	background: #a2d2ff
+	background: #a2d2ff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #profile-photo {
@@ -12,5 +15,9 @@ body {
 }
 
 h1, h2, h3, h4, p {
-	text-shadow: 0px 0px 10px black;
+	text-shadow: 0px 0px 1px black;
+}
+
+h2, h4 {
+	background: #EFB0C9;
 }
