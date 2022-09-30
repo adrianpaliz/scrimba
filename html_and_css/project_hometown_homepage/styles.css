@@ -1,8 +1,38 @@
 body {
     margin: 0;
     text-align: center;
+	font-family: Arial, Syabil, "Proda Sans";
 }
 
-img {
-    width: 100px;
+#hero-section {
+	/* Sizing */
+	width: 100vw;
+	height: 100vh;
+
+	/* Flexbox stuff */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ 	justify-content: center;
+
+	/* Background styles */
+	background-image: url("images/telmo_jimenez_park.jpg");
+	background-size: cover;
+
+	color: #FFFFFF
+}
+
+#title {	
+	background: #1D3557;
+	border-radius: 5px;
+	padding: 3px 12px 5px;
+	margin: auto auto 11px auto; 
+}
+
+#subtitle{
+	background: #457B9D;
+	border-radius: 5px;
+	padding: 5px 29px 8px;
+	width: 412px;
+	margin: 0 auto auto auto; 
 }
