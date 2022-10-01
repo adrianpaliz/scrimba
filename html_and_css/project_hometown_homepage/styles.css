@@ -29,10 +29,22 @@ body {
 	margin: auto auto 11px auto; 
 }
 
-#subtitle{
+#subtitle {
 	background: #457B9D;
 	border-radius: 5px;
 	padding: 5px 29px 8px;
 	width: 412px;
 	margin: 0 auto auto auto; 
 }
+
+#activity-photo {
+	border-radius: 50%;
+	width: 100px; 
+	margin-top: 55px;	
+}
+
+.activities-container {
+	display: flex;
+	justify-content: center;
+}
+
