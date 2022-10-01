@@ -37,14 +37,29 @@ body {
 	margin: 0 auto auto auto; 
 }
 
+
+h3 {
+	font-size: 24px;
+}
+
 #activity-photo {
 	border-radius: 50%;
 	width: 100px; 
 	margin-top: 55px;	
 }
 
-.activities-container {
+.activities-box {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	background: #F1FAEE;
 }
 
+.activities-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.item {
+	text-align: center;
+	width: 197px;	
+}
