@@ -4,8 +4,7 @@ let lap3 = 36
 
 
 function totalLapTime() {
-	let totalTime = lap1 + lap2 + lap3
-	console.log(totalTime)
+	console.log(lap1 + lap2 + lap3)
 }
 
 totalLapTime()
