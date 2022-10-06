@@ -1,3 +1,9 @@
+let countElement = document.getElementById("count-element")
+
+let count = 0
+
 function increment() {
-	console.log("The button was clicked")
+	count = count + 1
+	countElement.innerText = count
 }
+
