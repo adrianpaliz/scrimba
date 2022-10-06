@@ -7,3 +7,6 @@ function increment() {
 	countElement.innerText = count
 }
 
+function save() {
+	console.log(count)
+}
