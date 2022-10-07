@@ -1,4 +1,5 @@
 let countElement = document.getElementById("count-element")
+let savedElement = document.getElementById("save-element")
 
 let count = 0
 
@@ -8,10 +9,7 @@ function increment() {
 }
 
 function save() {
-	let savedElement = " " + count + " - "
-	paragraphTag = document.getElementById("save-element")
-	paragraphTag.innerText = paragraphTag.innerText + savedElement
+	let countString = count + " - "
+	savedElement.innerText += countString
 
-
-	console.log(count)
 }
