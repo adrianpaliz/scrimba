@@ -5,11 +5,11 @@ let count = 0
 
 function increment() {
 	count += 1
-	countElement.innerText = count
+	countElement.textContent = count
 }
 
 function save() {
 	let countString = count + " - "
-	savedElement.innerText += countString
+	savedElement.textContent += countString
 
 }
