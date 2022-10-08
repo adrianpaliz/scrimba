@@ -4,8 +4,7 @@ let greeting = "Hi there"
 // Create a function that logs out "Hi there, Linda!" when called
 
 function userGreeting(){
-	greetingString = greeting + ", " + name + "!"
-	console.log(greetingString)
+	console.log(greeting + ", " + name + "!")
 }
 
 userGreeting()
