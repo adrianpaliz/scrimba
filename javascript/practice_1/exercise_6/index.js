@@ -13,28 +13,25 @@ document.getElementById("number2-element").textContent = number2
 let sumElement = document.getElementById("sum-element")
 console.log(sumElement)
 
-
-
-
 function add() {
 	console.log("Button Add clicked")
 	console.log(sumElement.textContent)
 	sumTotal = number1 + number2
-	sumElement.textContent += sumTotal
+	sumElement.textContent ="Sum: " + sumTotal
 	console.log(sumElement.textContent)
 }
 
 function subtract() {
 	subtractTotal = number1 - number2
-	sumElement.textContent += subtractTotal
+	sumElement.textContent = "Sum: " + subtractTotal
 }
 
 function divide() {
 	divideTotal = number1 / number2
-	sumElement.textContent += divideTotal
+	sumElement.textContent = "Sum: " + divideTotal
 }
 
 function multiply() {
 	multiplyTotal = number1 * number2
-	sumElement.textContent += multiplyTotal
+	sumElement.textContent = "Sum: " + multiplyTotal
 }
