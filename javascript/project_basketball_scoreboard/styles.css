@@ -1,3 +1,8 @@
+@font-face {
+	src: url("fonts/cursedtimerulil-aznm.ttf");
+	font-family: "Cursed Timer ULiL";
+}
+
 body {
     margin: 0;
 }
@@ -5,4 +10,16 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
+}
+
+h3 {
+	font-family: Verdana;
+}
+
+p {
+	font-family: "Cursed Timer ULiL";
+}
+
+button {
+	font-family: "Cursed Timer ULiL" 
 }
