@@ -42,12 +42,18 @@ p {
 	align-items: center;
 	color: #F94F6D;
 	background: #080001;
+	border-radius: 5px;
 }
 
 button {
 	font-family: "Cursed Timer ULiL";
 	font-size: 18px;
 	margin-top: 26px;
+	margin-right: 9px;
 	color: #9AABDB;
 	background: #1B244A;
+	border-radius: 5px;
+	border: 2px solid #9AABD8;
+	width: 45px;
+	height: 45px;	
 }
