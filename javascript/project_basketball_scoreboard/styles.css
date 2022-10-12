@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+	background: #1B244A;
 }
 
 .container {
@@ -27,6 +28,7 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #EEEEEE;
 }
 
 p {
@@ -40,6 +42,8 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #F94F6D;
+	background: #080001;
 }
 
 button {
@@ -47,5 +51,7 @@ button {
 	font-size: 18px;
 	border-style: dotted;
 	margin-top: 26px;
+	color: #9AABDB;
+	background: #1B244A;
 }
 
