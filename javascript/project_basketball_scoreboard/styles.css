@@ -10,10 +10,11 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+	column-gap: 100px;
 }
 
-.score-container {
+.column {
 	text-align: center;
 }
 
@@ -25,24 +26,24 @@ h3 {
 	height: 36px;
 	margin-bottom: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: center; 
 	align-items: center;
 	color: #EEEEEE;
 }
 
-p {
-	font-family: "Cursed Timer ULiL";
+.score {
 	font-size: 90px;	
-	width: 155px;
-	height: 120px;
-	margin-top: 21px; 	
-	margin-bottom: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 117px;
+	height: 120px;		
+	margin-top: 21px;
+	margin-bottom: 0; 
 	color: #F94F6D;
 	background: #080001;
 	border-radius: 5px;
+	font-family: "Cursed Timer ULiL"; 
+	line-height: 139px;
+	padding-right: 20px;
+	padding-left: 18px;	
 }
 
 button {
