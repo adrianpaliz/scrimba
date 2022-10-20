@@ -7,8 +7,8 @@ let hasBlackJack = false
 let isAlive = true
 let message = ""
 
-let messageElement = document.getElementById("message-element")
-let sumElement = document.getElementById("sum-element")
+let messageElement = document.querySelector("#message-element")
+let sumElement = document.querySelector("#sum-element")
 
 function startGame() {
 	sumElement.textContent = "Sum: " + sum
