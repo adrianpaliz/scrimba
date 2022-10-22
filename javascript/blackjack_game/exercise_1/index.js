@@ -14,7 +14,8 @@ let sumElement = document.getElementById("sum-element")
 let cardsElement = document.getElementById("cards-element")
 
 function getRandomCard() {
-	return 5
+	let randomCard = Math.floor( Math.random() * 13 ) + 1
+	return randomCard
 }
 
 
@@ -46,6 +47,5 @@ function newCard() {
 	let card = getRandomCard()
 	sum += card
 	cards.push(card)
-	console.log(cards)
 	renderGame()
 }
