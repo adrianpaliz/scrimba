@@ -1,5 +1,5 @@
-let firstCard = 10 
-let secondCard = 4
+let firstCard = getRandomCard() 
+let secondCard = getRandomCard()
 
 let cards = [firstCard, secondCard]
 
@@ -12,6 +12,11 @@ let message = ""
 let messageElement = document.getElementById("message-element")
 let sumElement = document.getElementById("sum-element")
 let cardsElement = document.getElementById("cards-element")
+
+function getRandomCard() {
+	return 5
+}
+
 
 function startGame() {
 	renderGame()
@@ -38,7 +43,7 @@ function renderGame() {
 }
 
 function newCard() {
-	let card = 6
+	let card = getRandomCard()
 	sum += card
 	cards.push(card)
 	console.log(cards)
