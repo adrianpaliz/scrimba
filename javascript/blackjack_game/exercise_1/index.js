@@ -14,13 +14,13 @@ let sumElement = document.getElementById("sum-element")
 let cardsElement = document.getElementById("cards-element")
 
 function getRandomCard() {
-	let randomCard = Math.floor( Math.random() * 13 ) + 1
-	if (randomCard === 1){
-		return 11
-	} else if (randomCard === 11 || randomCard === 12 || randomCard === 13){
+	let randomNumber = Math.floor( Math.random() * 13 ) + 1
+	if (randomNumber > 10){
 		return 10
+	} else if (randomNumber === 1){
+		return 11
 	} else {
-		return randomCard
+		return randomNumber
 	}
 }
 
