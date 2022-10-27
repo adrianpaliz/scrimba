@@ -1,3 +1,8 @@
+let player = {
+	name: "Adrián",
+	chips: 172
+}
+
 let cards = []
 let sum = 0
 
@@ -8,13 +13,8 @@ let message = ""
 let messageElement = document.getElementById("message-element")
 let sumElement = document.getElementById("sum-element")
 let cardsElement = document.getElementById("cards-element")
-
-let player = {
-	name: "Adrián",
-	chips: 145
-}
-
 let playerElement = document.getElementById("player-element")
+
 playerElement.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
