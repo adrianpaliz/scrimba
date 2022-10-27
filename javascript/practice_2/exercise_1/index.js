@@ -5,8 +5,7 @@ let humanBeing = {
 }
 
 function logData() {
-	string = humanBeing.name + " is " + humanBeing.age + " years old and lives in " + humanBeing.country
-	console.log( string )
+	console.log(humanBeing.name + " is " + humanBeing.age + " years old and lives in " + humanBeing.country)
 }
 
 logData()
