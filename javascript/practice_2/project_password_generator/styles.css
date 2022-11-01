@@ -1,0 +1,62 @@
+@font-face {
+	src: url("fonts/karla.ttf");
+	font-family: "Karla";
+}
+
+@font-face {
+	src: url("fonts/inter.ttf");
+	font-family: "Inter";
+}
+
+body {
+    margin: 0;
+	background: #1F2937;	
+}
+
+h1 {
+	font-family: Karla;
+	font-size: 40px;
+	color: #FFFFFF;
+}
+
+span {
+	color: #4ADF86;
+	white-space: pre-wrap;
+}
+
+h2 {
+	font-family: Inter;
+	font-size: 20px;
+	color: #D5D4D8;
+}
+
+button {
+	font-family: Inter;
+	font-size: 16px;
+	width: 191px;
+	height: 42px;
+	background: #10B981;
+	color: #FFFFFF;
+	border-radius: 6px;
+}
+
+hr {
+	width: 446px;
+	height: 0px;
+	border: 1px solid #2F3E53;
+}
+
+input {
+	width: 211px;
+	height: 39px;
+	background: #273549;
+	border-radius: 6px;
+
+}
+
+
+
+
+
+
+
