@@ -9,41 +9,63 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px;
 	background: #1F2937;	
+}
+
+.container {
+	margin-left: 52px;
+	margin-top: 115px;
+	
 }
 
 h1 {
 	font-family: Karla;
+	font-weight: 800;
 	font-size: 40px;
 	color: #FFFFFF;
+	letter-spacing: -0.025em;
+	margin-bottom: 0;
 }
 
 span {
 	color: #4ADF86;
-	white-space: pre-wrap;
 }
 
 h2 {
 	font-family: Inter;
 	font-size: 20px;
+	font-weight: 400;
 	color: #D5D4D8;
+	margin-top: 10px;
+	margin-bottom: 51px;
 }
 
 button {
 	font-family: Inter;
 	font-size: 16px;
+	font-weight: 500;
 	width: 191px;
 	height: 42px;
 	background: #10B981;
 	color: #FFFFFF;
+	border: 0;
 	border-radius: 6px;
+	margin-bottom: 35px;
 }
 
 hr {
 	width: 446px;
+	margin: 0px;
 	height: 0px;
 	border: 1px solid #2F3E53;
+	margin-bottom: 35px;
+}
+
+
+.password-fields {
+	display: flex;
+	gap: 24px;
 }
 
 input {
@@ -51,12 +73,5 @@ input {
 	height: 39px;
 	background: #273549;
 	border-radius: 6px;
-
+	border: 0;
 }
-
-
-
-
-
-
-
