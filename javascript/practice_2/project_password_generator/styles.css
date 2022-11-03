@@ -16,7 +16,6 @@ body {
 .container {
 	margin-left: 52px;
 	margin-top: 115px;
-	
 }
 
 h1 {
@@ -61,7 +60,6 @@ hr {
 	border: 1px solid #2F3E53;
 	margin-bottom: 35px;
 }
-
 
 .password-fields {
 	display: flex;
