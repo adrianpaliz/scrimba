@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 
 
 let passwordFieldOneElement = document.getElementById("passwordFieldOne")
+let passwordFieldTwoElement = document.getElementById("passwordFieldTwo")
 let generateButton = document.getElementById("generateButton") 
 let passwordLength = 12
 
@@ -13,10 +14,13 @@ function getRandomCharacter() {
 }
 
 generateButton.addEventListener("click", function() {
-	let randomPassword = ""
+	let randomPasswordOne = ""
+	let randomPasswordTwo = ""
 	for(let index = 0; index < passwordLength; index++){
-		randomPassword += getRandomCharacter()
-	passwordFieldOneElement.value = randomPassword
+		randomPasswordOne += getRandomCharacter()
+		randomPasswordTwo += getRandomCharacter()
+	passwordFieldOneElement.value = randomPasswordOne
+	passwordFieldTwoElement.value = randomPasswordTwo
 	}
 })
  
