@@ -1,5 +1,3 @@
-let saveInputButton = document.getElementById("inputButton")
-
-saveInputButton.addEventListener("click", function(){
+function saveLead() {
 	console.log("Button clicked!")
-})
+}
