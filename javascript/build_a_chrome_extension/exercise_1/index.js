@@ -10,5 +10,5 @@ inputButtom.addEventListener("click", function() {
 })
 
 for (let index = 0; index < myLeads.length; index++) {	
-	unorderedListElement.textContent += myLeads[index] + " "
+	unorderedListElement.innerHTML += "<li>" + myLeads[index] + "</li>"
 }
