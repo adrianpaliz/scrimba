@@ -10,5 +10,11 @@ inputButtom.addEventListener("click", function() {
 })
 
 for (let index = 0; index < myLeads.length; index++) {	
-	unorderedListElement.innerHTML += "<li>" + myLeads[index] + "</li>"
+	// unorderedListElement.innerHTML += "<li>" + myLeads[index] + "</li>"
+	// create element
+	// set text content
+	// append to unorderedListElement
+	const liElement = document.createElement("li")
+	liElement.textContent = myLeads[index]
+	unorderedListElement.append(liElement)
 }
