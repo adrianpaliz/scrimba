@@ -11,8 +11,9 @@ inputButtom.addEventListener("click", function() {
 
 function renderLeads() {
 	let listItems = ""
-	for (let index = 0; index < myLeads.length; index++) {	
-	listItems += "<li>" + myLeads[index] + "</li>"
+	for (let index = 0; index < myLeads.length; index++) {
+		listItems += "<li><a target='_blank' href='" + myLeads[index] + "'>" + myLeads[index] + "</a></li>"
+		console.log(listItems)
 	}
 	unorderedListElement.innerHTML = listItems
 }
