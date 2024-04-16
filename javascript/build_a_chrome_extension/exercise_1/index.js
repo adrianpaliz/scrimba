@@ -5,10 +5,13 @@ const unorderedListElement = document.getElementById("unordered-list-element")
 
 inputButtom.addEventListener("click", function() {
 	myLeads.push(inputElement.value)
+	renderLeads()
 })
 
-let listItems = ""
-for (let index = 0; index < myLeads.length; index++) {	
+function renderLeads() {
+	let listItems = ""
+	for (let index = 0; index < myLeads.length; index++) {	
 	listItems += "<li>" + myLeads[index] + "</li>"
+	}
+	unorderedListElement.innerHTML = listItems
 }
-unorderedListElement.innerHTML = listItems
