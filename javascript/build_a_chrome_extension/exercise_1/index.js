@@ -5,6 +5,7 @@ const unorderedListElement = document.getElementById("unordered-list-element")
 
 inputButtom.addEventListener("click", function() {
 	myLeads.push(inputElement.value)
+	inputElement.value = ""
 	renderLeads()
 })
 
