@@ -1,8 +1,8 @@
 const welcomeElement = document.getElementById("welcome-element")
 
-function greetUser(greeting) {
-	welcomeElement.textContent = greeting + ", Adrián Páliz 👋"
+function greetUser(greeting, name) {
+	welcomeElement.textContent = greeting + ", " + name + "  👋"
 }
 
-greetUser("Alli puncha")
+greetUser("Alli puncha", "Adrián")
 
