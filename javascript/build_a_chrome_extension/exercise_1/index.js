@@ -1,15 +1,23 @@
 let myLeads = []
-let oldLeads = []
 const inputElement = document.getElementById("input-element")
 const inputButton = document.getElementById("input-button")
 const unorderedListElement = document.getElementById("unordered-list-element")
 const deleteButton = document.getElementById("delete-button")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
+const saveTabButton = document.getElementById("save-tab-button")
 
 if (leadsFromLocalStorage) {
 	myLeads = leadsFromLocalStorage 
 	render(myLeads)
 }
+
+const tabs = [
+	{url: "https://www.linkedin.com/in/adrianpaliz/"}
+]
+
+saveTabButton.addEventListener("click", function(){
+	console.log(tabs[0].url)
+})
 
 function render(leads) {
 	let listItems = ""
