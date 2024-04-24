@@ -11,9 +11,11 @@ const images = [
 ]
 
 function renderImages(){
+	let imagesDOM = ""
 	for (let index = 0; index < images.length; index++){
-		imagesContainer.innerHTML +=`<img class="writer-image" src="${images[index]}">`
+		imagesDOM +=`<img alt="Ecuadorian writer" class="writer-image" src="${images[index]}">`
 	}
+	imagesContainer.innerHTML = imagesDOM
 }
 
 renderImages()
