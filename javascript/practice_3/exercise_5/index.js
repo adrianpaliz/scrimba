@@ -8,8 +8,13 @@
 
 function generateSentence(description, array) {
 	let baseString = `The ${array.length} ${description} are `
+	const lastIndex = array.length - 1
 	for (let index = 0; index < array.length; index++){
-		baseString += array[index] + ", "
+		if (index === lastIndex) {
+			baseString += array[index]
+		} else {
+			baseString += array[index] + ", "
+		} 
 	}
 	return baseString
 }
