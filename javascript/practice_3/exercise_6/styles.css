@@ -1,0 +1,21 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: whitesmoke;
+    text-align: center;
+    color: #130e0f;
+}
+
+h1 {
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#images-container {
+    width: 100%;
+}
+
+.writer-image {
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px;
+}
