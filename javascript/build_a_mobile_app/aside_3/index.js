@@ -14,7 +14,7 @@ const booksElement = document.getElementById("books")
 onValue(booksInDataBase, function(snapshot) {
 	let booksArray = Object.values(snapshot.val())
 	clearBooksListElement()
-	let listOfBooks = ""
+	
 	for (let index = 0; index < booksArray.length; index++ ) {
 		let currentBook = booksArray[index]
 		appendBookToBooksListElement(currentBook)
