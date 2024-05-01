@@ -17,18 +17,22 @@ addButtonElement.addEventListener("click", function(){
 	let inputValue = inputFieldElement.value
 	push(shoppingListInDataBase, inputValue)
 	clearInputFieldElement()
-	appendItemToShoppingListElement(inputValue) 
 })
 
 onValue(shoppingListInDataBase, function(snapshot) {
 	let itemsArray = Object.values(snapshot.val())
 	
+	clearShoppingListElement()
+	
 	for (let index = 0; index < itemsArray.length; index++)	{
 		let currentItem = itemsArray[index]
 		appendItemToShoppingListElement(currentItem)
 	}
-
+	
 })
+function clearShoppingListElement() {
+	shoppingListElement.innerHTML = ""
+}
 
 function clearInputFieldElement() {
 	inputFieldElement.value = ""		
@@ -37,4 +41,3 @@ function clearInputFieldElement() {
 function appendItemToShoppingListElement(itemValue) {
 	shoppingListElement.innerHTML += `<li>${itemValue}</li>`
 }
-
