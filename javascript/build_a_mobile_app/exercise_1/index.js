@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
-import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
 
 const appSettings = {
 	databaseURL: ""
@@ -48,6 +48,11 @@ function appendItemToShoppingListElement(item) {
 	let newElement = document.createElement("li")
 	
 	newElement.textContent = itemValue
-	shoppingListElement.append(newElement)
+	
+	newElement.addEventListener("click", function() {
+		let exactLocationOfItemInDataBase = ref(database, `shoppingList/${itemID}`)
+		remove(exactLocationOfItemInDataBase)
+	})
 
+	shoppingListElement.append(newElement)
 }
