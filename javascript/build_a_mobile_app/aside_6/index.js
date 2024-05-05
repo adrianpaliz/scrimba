@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
-import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+import { getDatabase, ref, onValue, remove } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
 
 const appSettings = {
 	databaseURL: ""
@@ -34,7 +34,8 @@ function appendStoryToStoriesElement(story) {
 	newElement.textContent = storyTitle
 
 	newElement.addEventListener("dblclick", function() {
-
+		let exactLocationOfStoryInDataBase = ref(database, `newsStories/${storyID}`)
+		remove(exactLocationOfStoryInDataBase)
 	})
 
 	storiesElement.append(newElement)
