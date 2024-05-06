@@ -20,16 +20,21 @@ addButtonElement.addEventListener("click", function(){
 })
 
 onValue(shoppingListInDataBase, function(snapshot) {
-	let itemsArray = Object.entries(snapshot.val())
 	
-	clearShoppingListElement()
+	if (snapshot.exists()) {
+		let itemsArray = Object.entries(snapshot.val())	
+		
+		clearShoppingListElement()
 	
-	for (let index = 0; index < itemsArray.length; index++)	{
-		let currentItem = itemsArray[index]
-		let currentItemID = currentItem[0]
-		let currentItemValue = currentItem[1]
+		for (let index = 0; index < itemsArray.length; index++)	{
+			let currentItem = itemsArray[index]
+			let currentItemID = currentItem[0]
+			let currentItemValue = currentItem[1]
 
-		appendItemToShoppingListElement(currentItem)
+			appendItemToShoppingListElement(currentItem)
+		}
+	} else {
+		shoppingListElement.innerHTML = "No items here... yet"
 	}
 	
 })
