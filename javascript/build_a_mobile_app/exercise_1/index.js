@@ -51,6 +51,7 @@ function appendItemToShoppingListElement(item) {
 	let itemValue = item[1]
 	
 	let newElement = document.createElement("li")
+	newElement.tabIndex = 0
 	
 	newElement.textContent = itemValue
 	
