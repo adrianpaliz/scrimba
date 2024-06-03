@@ -32,12 +32,21 @@ for dictionary in stores:
     list_items = list(dictionary.keys())[1:]
     
     buy_item_key = input(f'Welcome to {dictionary['name']}! What do you want to buy: {list_items} ')
-    buy_item_key = buy_item_key.lower()
-    buy_item_value = dictionary.pop(buy_item_key)
     
-    cart.update({buy_item_key : buy_item_value})
+    if buy_item_key in list_items:
     
-    buy_items_list = ', '.join(list(cart.keys()))
-print(f'You purchased: {buy_items_list}. Today it is all free. Have a nice day of mayhen!')
+        buy_item_key = buy_item_key.lower()
+        buy_item_value = dictionary.pop(buy_item_key)
+    
+        cart.update({buy_item_key : buy_item_value})
+    
+        buy_items_list = ', '.join(list(cart.keys()))
+    elif buy_item_key == 'exit':
+        print('Goodbye')
+        continue
+    else:
+        print(f'The item {buy_item_key} does not exist')
+        continue
 
+print(f'You purchased: {buy_items_list}. Today it is all free. Have a nice day of mayhen!')
 
