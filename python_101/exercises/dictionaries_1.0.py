@@ -25,7 +25,9 @@ pet_shop = {
 
 cart = {
 }
+
 stores = (freelancers, antiques, pet_shop)
+
 for dictionary in stores:
     list_items = list(dictionary.keys())[1:]
     
@@ -34,5 +36,8 @@ for dictionary in stores:
     buy_item_value = dictionary.pop(buy_item_key)
     
     cart.update({buy_item_key : buy_item_value})
-print(cart)
+    
+    buy_items_list = ', '.join(list(cart.keys()))
+print(f'You purchased: {buy_items_list}. Today it is all free. Have a nice day of mayhen!')
+
 
