@@ -31,31 +31,25 @@ stores = (freelancers, antiques, pet_shop)
 purse = 1000
 spend = 0
 items_list = ''
+
 for dictionary in stores:
     list_items = list(dictionary.keys())[1:]
-    
     buy_item_key = input(f'Welcome to {dictionary['name']}! What do you want to buy: {list_items} ')
     
     if buy_item_key in list_items:
-    
         buy_item_key = buy_item_key.lower()
-        
-        items_list += f'{buy_item_key} : {dictionary[buy_item_key]} gold pieces, '
-        
+        items_list += f'{buy_item_key} : {dictionary[buy_item_key]} gold pieces, '   
         buy_item_value = dictionary.pop(buy_item_key)
-    
         cart.update({buy_item_key : buy_item_value})
-        
         spend += int(buy_item_value)
-
         gold_left_over = purse - int(buy_item_value)
-        
         buy_items_list = ', '.join(list(cart.keys()))
         print(f'{buy_item_key} was added to the cart')
 
     elif buy_item_key == 'exit':
         print('Goodbye')
         continue
+
     else:
         print(f'The item {buy_item_key} does not exist')
         continue
