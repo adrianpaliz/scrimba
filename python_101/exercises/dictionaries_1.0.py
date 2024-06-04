@@ -32,8 +32,9 @@ purse = 1000
 spend = 0
 items_list = ''
 inventory = {**freelancers, **antiques, **pet_shop}
-
-print('Inventory: ', list(inventory)[1:])
+inventory.pop('name')
+print('Morning inventory of stores: ', sorted(inventory.items()))
+print('-------------------------')
 
 for dictionary in stores:
     list_items = list(dictionary.keys())[1:]
@@ -58,5 +59,7 @@ print(f'You purchased: {items_list}. Today you spend {spend} and have {gold_left
 final_inventory = {}
 for dictionary in (freelancers, antiques, pet_shop):
     final_inventory.update(dictionary)
-print('Final inventory: ',list(final_inventory)[1:])
+    final_inventory.pop('name')
+print('-------------------------')
+print('Final inventory: ', sorted(final_inventory.items()))
 
