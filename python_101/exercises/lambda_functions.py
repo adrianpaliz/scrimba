@@ -40,10 +40,8 @@ print(g(2))
 #Fifth exercise
 signups = ['MPF104', 'MPF20', 'MPF2', 'MPF17', 'MPF3', 'MPF45']
 print(sorted(signups)) # Lexicographic sort
+#My solution
 print(sorted(signups,  key = lambda signups: int(''.join(filter(str.isdigit, signups))))) # Integer sort
-
-
-
-
-
+#Teacher solution
+print(sorted(signups, key = lambda id: int(id[3:]))) 
 
