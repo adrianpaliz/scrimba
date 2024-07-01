@@ -1,3 +1,5 @@
+import timeit
+
 def test_1():
     [number for number in range(1, 151) if not any([number % divisor == 0 for divisor in range(2, number)]) and not number == 1]
     return(1)
@@ -22,4 +24,9 @@ def test_4():
         if is_prime:
             prime_numbers.append(possible_prime)
     return(1)
+
+print(timeit.timeit('test_1()', globals = globals(), number = 10))
+print(timeit.timeit('test_2()', globals = globals(), number = 10))
+print(timeit.timeit('test_3()', globals = globals(), number = 10))
+print(timeit.timeit('test_4()', globals = globals(), number = 10))
 
