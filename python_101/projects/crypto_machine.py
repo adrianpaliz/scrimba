@@ -13,14 +13,14 @@ def enigma_light():
     #dict_decryption = {value : key for key, value in dict_encryption.items()}
 # User input 'The message' and mode
     message = input('Enter your secret message quietly: ')
-    mode = input('Crypto mode: encode (e) OR decode (d): ')
+    mode = input('Crypto mode: encode (e) OR decrypt as default: ')
 # Run encode or decode
-    if mode == 'e':
-        new_message = ''.join([dict_encryption[letter] for letter in message])
-    elif mode == 'd':
-        new_message = ''.join([dict_decryption[letter] for letter in message])
+    if mode.lower() == 'e':
+        new_message = ''.join([dict_encryption[letter] for letter in message.lower()])
+    else:
+        new_message = ''.join([dict_decryption[letter] for letter in message.lower()])
 # Return result
-    return new_message
+    return new_message.capitalize()
 
 print(enigma_light())
 
