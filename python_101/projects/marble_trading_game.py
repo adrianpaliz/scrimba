@@ -5,7 +5,8 @@ attempt = 0
 # User start the game with 1000 $
 money = 1000
 # Define the bag with 10 marbles (6 green and 4 red)
-marbles_bag = ['red', 'green', 'red', 'green', 'red', 'green', 'red', 'green', 'red', 'red']
+# Replace two marbles 1 green with a black and 1 red with a white
+marbles_bag = ['red', 'black', 'red', 'green', 'red', 'green', 'red', 'green', 'red', 'white']
 # User will have variable number of draws
 user_draws = random.randrange(1, 5 + 1)
 
@@ -23,13 +24,21 @@ for draws in range(user_draws):
             money += user_bet
 # Print out data as user go along
             print(f'You take a {random_marble} one, you win :) you have {money}')
-        elif random_marble == 'red':
+        if random_marble == 'red':
             marbles_bag.remove('red')
             money -= user_bet
             print(f'You take a {random_marble} one, you lose :( you have {money}')
+# A black marble (10X winner) and 1 white (5X loser)
+        if random_marble == 'black':
+            marbles_bag.remove('black')
+            money = user_bet * 10
+            print(f'You take a {random_marble} one, you win 10 times your bet :) you have {money}')
+        elif random_marble == 'white':
+            marbles_bag.remove('white')
+            money -= user_bet * 5
+            print(f'You take a {random_marble} one, you lose 5 times your bet :( you have {money}')
     else:        
         print(f"You loose half of your money :( you can't keep betting")
         break
 # Marbles are replaced into bag after each round
 
-# Bonus: replace two marbles 1 green with a black (10X winner) and 1 red (5X loser)
