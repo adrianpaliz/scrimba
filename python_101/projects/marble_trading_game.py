@@ -31,7 +31,7 @@ for draws in range(user_draws):
 # A black marble (10X winner) and 1 white (5X loser)
         if random_marble == 'black':
             marbles_bag.remove('black')
-            money = user_bet * 10
+            money += user_bet * 10
             print(f'You take a {random_marble} one, you win 10 times your bet :) you have {money}')
         elif random_marble == 'white':
             marbles_bag.remove('white')
