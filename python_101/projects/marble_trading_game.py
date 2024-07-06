@@ -1,7 +1,6 @@
 # Import the modules
 import random
 from random import randrange
-attempt = 0
 # User start the game with 1000 $
 money = 1000
 # Define the bag with 10 marbles (6 green and 4 red)
